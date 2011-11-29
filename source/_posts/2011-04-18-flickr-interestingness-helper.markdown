@@ -16,17 +16,18 @@ categories:
 [createapp]: http://www.flickr.com/services/api/
 
 I use the standard MacOS gallery screensaver with a large collection of
-high-resolution photos which I've been collecting for several years. My primary
-source of photos is [Flickr][flickr], and in particular the [Interestingness /
-Last 7 Days][ness] page is a jackpot of great images. As much fun as sitting
-around clicking `RELOAD!` is, I wanted to make the task a bit more efficient.
+high-resolution photos which I've been collecting for several years. My
+primary source of photos is [Flickr][flickr], and in particular the
+[Interestingness / Last 7 Days][ness] page is a jackpot of great images. As
+much fun as sitting around clicking `RELOAD!` is, I wanted to make the task a
+bit more efficient.
 
 I wrote a script `interestingness.py` (shown below) that downloads the last 24
-hours worth of photos from the *interestingness* Flickr category. Additionally,
-it only saves the largest available version of each image. Once the images are
-all in a single directory, I open them all up in *Preview* and use
-`Cmd-Backspace` to remove the images I don't want. After that, the contents of
-the directory can be moved to the screeensaver archive folder.
+hours worth of photos from the *interestingness* Flickr category.
+Additionally, it only saves the largest available version of each image. Once
+the images are all in a single directory, I open them all up in *Preview* and
+use `Cmd-Backspace` to remove the images I don't want. After that, the
+contents of the directory can be moved to the screeensaver archive folder.
 
 To use the script you'll need a Flickr API access key, and the Flickr API
 Python library.
