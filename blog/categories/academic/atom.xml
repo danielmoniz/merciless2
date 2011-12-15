@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: academic | Noah Watkins.]]></title>
+  <link href="http://noahdesu.com/blog/categories/academic/atom.xml" rel="self"/>
+  <link href="http://noahdesu.com/"/>
+  <updated>2011-12-14T23:13:09-08:00</updated>
+  <id>http://noahdesu.com/</id>
+  <author>
+    <name><![CDATA[Noah Watkins]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[RAMCloud Recovery and Research Philosophy]]></title>
+    <link href="http://noahdesu.com/blog/2011/11/30/ramcloud-recovery-and-research-philosophy/"/>
+    <updated>2011-11-30T22:58:00-08:00</updated>
+    <id>http://noahdesu.com/blog/2011/11/30/ramcloud-recovery-and-research-philosophy</id>
+    <content type="html"><![CDATA[<p>In the YouTube video below John Ousterhout talks at LinkedIn about the
+RAMCloud project and the recovery mechanism that it uses. The
+<a href="https://ramcloud.stanford.edu/wiki/display/ramcloud/Home">RAMCloud project</a> is building a scalable, durable, entirely in-memory data store.
+Data in RAMCloud is served from a single in-memory copy. Since only one copy
+exists in memory (stable storage holds backups) a server crash means there is
+no opporunitiy for fail-over. To avoid unavailability of data for long
+periods, the goal is to recover fast using many spindles within the cluster,
+aiming for 1-2 second recovery times that appear only as a delay to any
+application.  Recovery in RAMCloud is fascinating!</p>
+
+<iframe width="560" height="315"
+src="http://www.youtube.com/embed/lcUvU3b5co8" frameborder="0"
+allowfullscreen></iframe>
+
+
+<p>I was also thrilled to hear that the RAMCloud research group Ousterhout is
+running at Stanford is aiming to produce production quality code. In the video
+John explains that it is an awful waste of time to produce code for research
+papers, only to toss everything to the side afterwards. I agree entirely, and
+would even make a stronger statement that aiming for high-quality open code
+the way RAMCloud is produces better research and better students. If I ever
+find myself running a lab in the future, I know code quality and open review
+will be integral part of our research workflow.</p>
+]]></content>
+  </entry>
+  
+</feed>
